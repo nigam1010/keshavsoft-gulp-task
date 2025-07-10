@@ -1,0 +1,11 @@
+.main-content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .container {
+  max-width: 100%;
+}

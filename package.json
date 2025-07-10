@@ -1,0 +1,23 @@
+{
+  "name": "ks-gulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^8.0.0"
+  }
+}
