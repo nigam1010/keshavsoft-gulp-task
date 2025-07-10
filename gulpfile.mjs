@@ -11,7 +11,7 @@ const sassCompiler = gulpSass(dartSass);
 
 // Home page
 const buildHome = () =>
-  gulp.src('src/html/index.html')
+  gulp.src('src/index.html')
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file',
@@ -22,7 +22,7 @@ const buildHome = () =>
 
 // About page
 const buildAbout = () =>
-  gulp.src('src/html/about.html')
+  gulp.src('src/about.html')
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file',
@@ -33,7 +33,7 @@ const buildAbout = () =>
 
 // Contact page
 const buildContact = () =>
-  gulp.src('src/html/contact.html')
+  gulp.src('src/contact.html')
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file',
@@ -61,7 +61,7 @@ export const clean = (done) => {
 // Dev Server + Watch
 export const serve = () => {
   bs.init({ server: { baseDir: 'dist' }, port: 8080 });
-  gulp.watch('src/html/**/*.html', html);
+  gulp.watch('src/**/*.html', html);
   gulp.watch('src/partials/**/*.html', html);
   gulp.watch('src/scss/**/*.scss', css);
 };
@@ -71,7 +71,7 @@ export default gulp.series(clean, gulp.parallel(html, css), serve);
 
 //sidebar
 const buildSidebar = () =>
-  gulp.src('src/html/sidebar.html')
+  gulp.src('src/partials/sidebar.html')
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file',
